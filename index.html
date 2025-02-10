@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="nav-1" class="nav-1"></div>
+    <script>
+      fetch('nav.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('nav-1').innerHTML = data);
+    </script>
+    
+    <h1>This is Web</h1>
+    <div class="boxes">
+    <div id="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque,</div>
+    <div id="box2">Lorem ipsum dolor sit amet consr beatae? Iste animi similique ea.</div>
+    </div>
+</body>
+</html>
