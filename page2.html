@@ -1,26 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Page</title>
 
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="myfile.js"></script>
+  </head>
+  <body>
     <div id="nav-1" class="nav-1"></div>
     <script>
-      fetch('nav.html')
-        .then(response => response.text())
-        .then(data => document.getElementById('nav-1').innerHTML = data);
+      fetch("nav.html")
+        .then((response) => response.text())
+        .then((data) => (document.getElementById("nav-1").innerHTML = data));
     </script>
-    
-    <h1>This is page 2 </h1>
-    
-    <p id="p1" class="odd"><Strong>Lorem</Strong>, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit pariatur quam aut culpa similique ipsam veritatis officia, quibusdam quisquam adipisci corrupti dolorum nostrum ratione doloribus perferendis voluptatum dolor a? Mollitia!</p>
-    <p id="p2" class="even">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit pariatur quam aut culpa similique ipsam veritatis officia, quibusdam quisquam adipisci corrupti dolorum nostrum ratione doloribus perferendis voluptatum dolor a? Mollitia!</p>
-    <p id="p3" class="odd">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit pariatur quam aut culpa similique ipsam veritatis officia, quibusdam quisquam adipisci corrupti dolorum nostrum ratione doloribus perferendis voluptatum dolor a? Mollitia!</p>
-    
 
-</body>
+    <h1>This is page 2</h1>
+
+    <p id="p1" class="odd">
+      <strong>Lorem</strong>, ipsum dolor sit amet consectetur adipisicing elit.
+      Reprehenderit pariatur quam aut culpa similique ipsam veritatis officia,
+      quibusdam quisquam adipisci corrupti dolorum nostrum ratione doloribus
+      perferendis voluptatum dolor a? Mollitia!
+    </p>
+    <p id="p2" class="even">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
+      pariatur quam aut culpa similique ipsam veritatis officia, quibusdam
+      quisquam adipisci corrupti dolorum nostrum ratione doloribus perferendis
+      voluptatum dolor a? Mollitia!
+    </p>
+    <p id="p3" class="odd">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
+      pariatur quam aut culpa similique ipsam veritatis officia, quibusdam
+      quisquam adipisci corrupti dolorum nostrum ratione doloribus perferendis
+      voluptatum dolor a? Mollitia!
+    </p>
+  </body>
 </html>
