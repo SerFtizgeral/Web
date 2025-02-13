@@ -12,8 +12,10 @@
 body {
   background-image: url("bg.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   background-attachment: fixed;
   background-position: center;
+  margin: 0px;
 }
 
 .nav-1 {
@@ -53,8 +55,11 @@ body {
   transition-duration: 500ms;
 }
 
-.odd,
-.even {
+.odd, .even {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  justify-content: center;
   background: linear-gradient(to right, skyblue, white);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -73,7 +78,13 @@ h1 {
   background-repeat: no-repeat;
   background-attachment: fixed;
   margin: 10px;
+ text-align: center;
   font-size: 65px;
+  position: sticky;
+  top: 0px;
+ 
+
+  
 }
 
 #p1 {
@@ -90,6 +101,7 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  
 }
 
 #box1 {
@@ -125,4 +137,29 @@ button{
 .btn1 {
   display: flex;
   justify-content: center;
+}
+/* .mg img {
+  max-height: 200px;
+} */
+
+.mg{
+ 
+display: flex;
+float: left;
+flex-direction: column;
+gap: 20px;
+  
+
+}
+img{
+  object-fit: cover;
+}
+
+.mg {
+  justify-items: center;
+}
+
+a:link {
+  text-decoration: none;
+  color: white;
 }

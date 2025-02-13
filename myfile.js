@@ -1,3 +1,3 @@
 function onClickEvent(){
-    alert("You touched me!");
+    window.location.href = "https://www.google.com/";
 }
