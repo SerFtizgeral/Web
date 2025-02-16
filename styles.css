@@ -11,6 +11,7 @@
   margin: 10px;
   font-size: 20px;
   font-family: "consoloas", serif;
+  font-weight: bold;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -37,7 +38,7 @@
 
 .nav-1 a {
   text-decoration: none;
-  color: aliceblue;
+  color: rgb(216, 43, 43);;
 }
 
 .nav-1 :hover {
@@ -46,7 +47,7 @@
 }
 
 body {
-  background: url("bg.jpg") no-repeat center/cover fixed;
+  background: url("/img/Protagonist.jpg") no-repeat center/cover fixed;
   margin: 0;
 }
 
@@ -96,7 +97,7 @@ body {
   top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 16px;
+  font-size: 20px;
   font-family: "Consolas", monospace;
   text-align: center;
   font-weight: bold;
@@ -131,17 +132,19 @@ body {
 
 
 /* testimonials */
-.odd, .even {
+.odd {
   display: flex;
   align-items: center;
   gap: 40px;
   justify-content: center;
   background: url("/img/quotes.png") no-repeat center/cover;
+  background-color: rgba(240, 248, 255, 0.4);
   background-size: 10%;
   background-position: 95% 20%;
   left: 30px;
   font-family: "consoloas", serif;
   font-size: 18px;
+  color: rgb(216, 43, 43);
   border: 2px solid gold;
   border-radius: 5px;
   padding: 20px;
@@ -164,15 +167,16 @@ h1 {
   font-size: 65px;
 }
 strong {
-  font-size: 30px;
+  color: rgb(216, 43, 43);
+  font-size: 35px;
   position: relative;
   top: -60px;
   white-space: nowrap;
 }
 .strong1{
-  color: rgb(213, 206, 206);
+  color: gray;
   display: inline; /* Forces it to behave like a block element */
-  font-size: 14px;
+  font-size: 18px;
   position: relative;
   top: -35px;
   right: 140px;
@@ -192,8 +196,10 @@ img {
 }
 
 #p1 {
-  font-size: 16px;
-  color: rgb(236, 236, 236);
+  font-size: 26px;
+  font-weight: bold;
+  color: black;
+
 }
 
 .boxes {
@@ -242,3 +248,4 @@ button:hover {
   background-color: tomato;
   transition-duration: 500ms;
 }
+
