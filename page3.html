@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Come and See! This is my The Front page of my website" />
+    <title>Francois -x&mdash;&mdash;</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="myfile.js"></script>
+   <link rel="icon" href="./img/cube.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div id="nav-1" class="nav-1">
+    <script>
+      fetch("nav.html")
+        .then((response) => response.text())
+        .then((data) => (document.getElementById("nav-1").innerHTML = data));
+    </script>
+    </div>
+   
+
+<div>
+<img src="./img/JIB4.jpg" alt="bannerimg" class="bannerimg"/>
+
+    <h1 class="h1index">Projects!</h1>  
+    <p class="pbanner"> Here, you'll find a showcase of my work—creative, functional, and built with passion. Each project is a step in my journey of innovation and learning. Take a look around and get inspired!</p>
+      <button class="btn1" type="button" onclick="onClickEvent()">My React Portfolio!</button>
+    </div>  
+
+
+
+   <!-- <div>
+    <section class="new-section">
+      <h2>New Section</h2>
+      <p>This is the new section added under the banner.</p>
+ 
+    <h2 class="h2index">Overview</h2>
+  </section>
+   </div>
+  -->
+
+
+  </body>
+</html>

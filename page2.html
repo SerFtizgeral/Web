@@ -1,49 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Testimonials</title>
 
-    <link rel="stylesheet" href="styles.css" />
-    <script src="myfile.js"></script>
-  </head>
-  <body>
-    <div id="nav-1" class="nav-1"></div>
-    <script>
-      fetch("nav.html")
-        .then((response) => response.text())
-        .then((data) => (document.getElementById("nav-1").innerHTML = data));
-    </script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Testimonials</title>
+
+  <link rel="stylesheet" href="styles.css" />
+  <script src="myfile.js"></script>
+</head>
+
+<body>
+  <div id="nav-1" class="nav-1"></div>
+  <script>
+    fetch("nav.html")
+      .then((response) => response.text())
+      .then((data) => (document.getElementById("nav-1").innerHTML = data));
+  </script>
 
 
 
-    <div class="mg">
-     <h1>Testimonials</h1>
-      
+  <div class="mg">
+    <h1>Testimonials</h1>
 
-      <div>
-        <p id="p1" class="odd">
-          <img src="/img/goku.gif" alt="image" style="width: 200px; height: 150px; border-radius: 50%; object-fit: cover;" />
-          <strong>John Ali</strong>
-          <strong class="strong1">Entrepreneur</strong> Wow, amazing! Grabe gid ka unique kag creative ni nga website! Daw wala gid sing pareho—one of a kind! Padayon lang sa pag-improve, kay may potential gid ni nga website! Kudos! 🔥😊
-        </p>
-      </div>
 
-      <div>
-        <p id="p1" class="odd">
-          <img src="/img/sonic-sonic-the-hedgehog.gif" alt="image" style="width: 200px; height: 150px; border-radius: 50%; object-fit: cover;" />
-          <strong>Franz Ali</strong><strong class="strong1">Basher</strong> Ginago! Palagpat ni nga website, oy! Ayusin nyo ni kay daw guba-guba na. Damo pa man siguro ni bugs, kay indi ni masabtan! Hahaha! Ano natabo diri? 😂
-        </p>
-      </div>
-
-      <div>
-        <p id="p1" class="odd">
-          <img src="/img/monkey-music.gif" alt="image" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover;" />
-          <strong>Kappa Jordan</strong><strong class="strong1">Chismoso</strong> 
-          Kiwi Kiwi manii! Kay oha mani ninyo kay daw guba-guba na and text. Hahaha! Daw pang amo mani nga website man? Yoooooooooogsssssssssssssssss 😡🐵
-        </p>
-      </div>
+    <div>
+      <p id="p1" class="odd">
+        <img src="/img/goku.gif" alt="image"
+          style="width: 200px; height: 150px; border-radius: 50%; object-fit: cover;" />
+        <strong>Pungoy Ali</strong>
+        <strong class="strong1">Entrepreneur</strong> Wow, amazing! Grabe gid ka unique kag creative ni nga website! Daw
+        wala gid sing pareho—one of a kind! Padayon lang sa pag-improve, kay may potential gid ni nga website! Kudos!
+        🔥😊
+      </p>
     </div>
-  </body>
+
+    <div>
+      <p id="p1" class="odd">
+        <img src="/img/sonic-sonic-the-hedgehog.gif" alt="image"
+          style="width: 200px; height: 150px; border-radius: 50%; object-fit: cover;" />
+        <strong>Freaky Franz</strong><strong class="strong1">Basher</strong> Ginago! Palagpat ni nga website, oy! Ayusin
+        nyo ni kay daw guba-guba na. Damo pa man siguro ni bugs, kay indi ni masabtan! Hahaha! Ano natabo diri? 😂
+      </p>
+    </div>
+
+    <div>
+      <p id="p1" class="odd">
+        <img src="/img/monkey-music.gif" alt="image"
+          style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover;" />
+        <strong>Mang Key</strong><strong class="strong1">Unggoy</strong>
+        Kiwi Kiwi manii! Kay oha mani ninyo kay daw guba-guba na and text. Hahaha! Daw pang amo mani nga website man?
+        Yoooooooooogsssssssssssssssss 😡🐵
+      </p>
+    </div>
+  </div>
+</body>
+
 </html>
