@@ -3,35 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="description" content="Come and See! This is my The Front page of my website" />
+    <title>Francois &mdash; +</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="myfile.js"></script>
+   <link rel="icon" href="./img/cube.png" type="image/x-icon" />
   </head>
   <body>
-    <div id="nav-1" class="nav-1"></div>
+    <div id="nav-1" class="nav-1">
     <script>
       fetch("nav.html")
         .then((response) => response.text())
         .then((data) => (document.getElementById("nav-1").innerHTML = data));
     </script>
-
-    <h1>This is Web</h1>
-    <div class="boxes">
-      <div id="box1">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque,
-      </div>
-      <div id="box2">
-        Lorem ipsum dolor sit amet consr beatae? Iste animi similique ea.
-      </div>
     </div>
    
-    <div class="btn1">
-      <button type="button" onclick="onClickEvent()">Click me</button>
-    </div>
-    <a href="https://www.google.com/">Clck</a>
 
-
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus soluta fugit, expedita obcaecati perspiciatis quisquam voluptatem corporis ullam culpa iste quidem, totam nam inventore veritatis sunt amet commodi praesentium asperiores!</p>
+<div>
+<img src="./img/halfton2.jpg" alt="bannerimg" class="bannerimg"/>
+<!-- <img src="./img/Protagonist.jpg" alt="sideimg" class="sideimg"/> -->
+    <h1 class="h1index">Welcome to My Portfolio!</h1>  
+    <p class="pbanner"> Explore my work in web development and design, where creativity meets functionality. Let’s build something amazing together!</p>
+      <button class="btn1" type="button" onclick="onClickEvent()">My React Portfolio!</button>
+    </div>  
    
+ 
+
+
   </body>
 </html>

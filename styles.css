@@ -7,12 +7,6 @@
   margin: 0;
   padding: 0;
 }
-
-body {
-  background: url("bg.jpg") no-repeat center/cover fixed;
-  margin: 0;
-}
-
 .nav-1 {
   margin: 10px;
   font-size: 20px;
@@ -23,6 +17,7 @@ body {
   align-items: center;
   border: 2px solid rgb(212, 209, 209);
   padding: 10px 20px;
+
 }
 
 .nav-1 * {
@@ -46,16 +41,105 @@ body {
 }
 
 .nav-1 :hover {
-  color: aqua;
+  color: rgb(216, 43, 43);
   transition-duration: 500ms;
 }
 
+body {
+  background: url("bg.jpg") no-repeat center/cover fixed;
+  margin: 0;
+}
+
+/* Banner */
+
+.bannerimg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+.sideimg {
+
+
+  width: 20%;
+  height: 20%;
+  border-radius: 50%;
+  
+  object-fit: cover;
+  z-index: -1;
+}
+.pbanner {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  font-family: "consoloas", serif;
+  text-align: center;
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00fffb, #2b65ff, #8000ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold
+}
+@keyframes chromatic {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.pbanner {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  font-family: "Consolas", monospace;
+  text-align: center;
+  font-weight: bold;
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00fffb, #2b65ff, #8000ff);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: chromatic 6s infinite linear;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* testimonials */
 .odd, .even {
   display: flex;
   align-items: center;
   gap: 40px;
   justify-content: center;
-  background: linear-gradient(to right, skyblue, white) no-repeat fixed;
+  background: url("/img/quotes.png") no-repeat center/cover;
+  background-size: 10%;
+  background-position: 95% 20%;
+  left: 30px;
   font-family: "consoloas", serif;
   font-size: 18px;
   border: 2px solid gold;
@@ -63,26 +147,53 @@ body {
   padding: 20px;
   margin: 10px;
 }
-
-h1 {
-  background: linear-gradient(to right, skyblue, white) no-repeat fixed;
-  margin: 10px;
+.h1index {
+  position: absolute; /* Position the h1 element absolutely within the parent */
+  top: 50%; /* Adjust as needed */
+  left: 50%; /* Adjust as needed */
+  transform: translate(-50%, -50%); /* Center the h1 element */
+  margin: 0;
+  color:  rgb(216, 43, 43);
   text-align: center;
   font-size: 65px;
-  position: sticky;
-  top: 0;
+}
+
+h1 {
+  color: rgb(216, 43, 43);
+  text-align: center;
+  font-size: 65px;
+}
+strong {
+  font-size: 30px;
+  position: relative;
+  top: -60px;
+  white-space: nowrap;
+}
+.strong1{
+  color: rgb(213, 206, 206);
+  display: inline; /* Forces it to behave like a block element */
+  font-size: 14px;
+  position: relative;
+  top: -35px;
+  right: 140px;
+  white-space: nowrap; /* Keeps names on the same line */
+
+}
+.mg {
+  display: flex;
+  float: left;
+  flex-direction: column;
+  gap: 20px;
+  justify-items: center;
+}
+
+img {
+  object-fit: cover;
 }
 
 #p1 {
-  color: rgb(42, 196, 42);
-}
-
-.odd {
-  color: red;
-}
-
-.even {
-  color: blue;
+  font-size: 16px;
+  color: rgb(236, 236, 236);
 }
 
 .boxes {
@@ -108,34 +219,26 @@ h1 {
   background-color: blanchedalmond;
 }
 
-button {
-  background-color: rgb(42, 196, 42);
+
+
+.btn1 {
+  background-color: rgb(216, 43, 43);
   color: white;
+  font-family: Consolas, sans-serif;
   padding: 10px 20px;
-  font-size: 20px;
+  font-size: 16px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-}
-
-.btn1 {
+  position: absolute; 
+  bottom: 20px; 
+  left: 50%; 
+  transform: translateX(-50%);
   display: flex;
-  justify-content: center;
+  justify-content: center; 
 }
-
-.mg {
-  display: flex;
-  float: left;
-  flex-direction: column;
-  gap: 20px;
-  justify-items: center;
-}
-
-img {
-  object-fit: cover;
-}
-
-a:link {
-  text-decoration: none;
-  color: white;
+button:hover {
+  color: green;
+  background-color: tomato;
+  transition-duration: 500ms;
 }
