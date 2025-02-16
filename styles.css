@@ -85,20 +85,7 @@ body {
   object-fit: cover;
   z-index: -1;
 }
-.pbanner {
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 16px;
-  font-family: "consoloas", serif;
-  text-align: center;
-  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00fffb, #2b65ff, #8000ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: bold
-}
+
 @keyframes chromatic {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
@@ -121,24 +108,6 @@ body {
   animation: chromatic 6s infinite linear;
   cursor:default;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
