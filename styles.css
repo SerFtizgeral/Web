@@ -8,7 +8,6 @@
   padding: 0;
 }
 .nav-1 {
-  margin: 10px;
   font-size: 20px;
   font-family: "consoloas", serif;
   font-weight: bold;
@@ -16,7 +15,7 @@
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  background-color: rgba(240, 248, 255, 0.1);
+  
   border: 2px solid rgb(212, 209, 209);
   padding: 10px 20px;
 
@@ -59,14 +58,29 @@
     0 0 30px rgba(216, 43, 43, 0.7);
 }
 
-body {
+/* body {
   background: url("/img/Protagonist.jpg") no-repeat center center fixed;
   background-size: cover; 
   margin: 0;
-}
+} */
 /* Banner */
 
 .bannerimg {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  display: block;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+.bannerimgpage2 {
   position: absolute;
   top: 0;
   left: 0;
@@ -74,17 +88,17 @@ body {
   height: 100vh;
   object-fit: cover;
   z-index: -1;
+  margin-top: 0;
+  padding-top: 0;
 }
-.sideimg {
-
-
+/* .sideimg {
   width: 20%;
   height: 20%;
   border-radius: 50%;
   
   object-fit: cover;
   z-index: -1;
-}
+} */
 
 @keyframes chromatic {
   0% { background-position: 0% 50%; }
@@ -93,20 +107,22 @@ body {
 }
 
 .pbanner {
-  position: absolute;
+  position: relative;
   top: 80%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -1000%);
   font-size: 20px;
   font-family: "Consolas", monospace;
   text-align: center;
   font-weight: bold;
+  margin: 0;
+  padding: 0;
   background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00fffb, #2b65ff, #8000ff);
   background-size: 300% 300%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: chromatic 6s infinite linear;
-  cursor:default;
+  cursor: default;
 }
 
 
@@ -121,7 +137,7 @@ body {
   gap: 40px;
   justify-content: center;
   background: url("/img/quotes.png") no-repeat center/cover;
-  background-color: rgba(240, 248, 255, 0.4);
+  background-color: rgba(201, 187, 187, 0.3);
   background-size: 10%;
   background-position: 95% 20%;
   left: 30px;
@@ -235,3 +251,41 @@ img {
   transition-duration: 500ms;
 } */
 
+
+/* ---------------------------------New Section------------------------------------------- */
+.new-section{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.h2index {
+  position: relative;
+  left: 10%;
+  transform: translate(-50%, -900%);
+  text-shadow: 1px 2px gold;
+  margin: 0;
+  color: rgb(216, 43, 43);
+  text-align: center;
+  font-size: 65px;
+  cursor: default;
+}
+
+.article1{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  transform: translate(0%, -600%);
+  background-color: rgba(201, 187, 187, 0.3);
+  border: 2px solid gold;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  font-family: "consoloas", serif;
+  font-size: 18px;
+  color: black
+}
