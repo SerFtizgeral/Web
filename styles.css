@@ -58,11 +58,9 @@
     0 0 30px rgba(216, 43, 43, 0.7);
 }
 
-/* body {
-  background: url("/img/Protagonist.jpg") no-repeat center center fixed;
-  background-size: cover; 
-  margin: 0;
-} */
+body {
+ background-color: black;
+}
 /* Banner */
 
 .bannerimg {
