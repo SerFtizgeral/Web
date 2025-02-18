@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Come and See! This is my The Front page of my website" />
   <title>Francois -x&mdash;&mdash;</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="/css/styles.css" />
   <script src="myfile.js"></script>
   <link rel="icon" href="./img/cube.png" type="image/x-icon" />
 </head>
@@ -20,31 +20,70 @@
     </script>
   </div>
 
-
   <div class="bannerimgdiv">
     <img src="./img/halfton2.jpg" alt="bannerimg" class="bannerimg" />
-    <!-- <img src="./img/Protagonist.jpg" alt="sideimg" class="sideimg"/> -->
     <h1 class="h1index">Welcome to My Portfolio!</h1>
     <p class="pbanner"> Explore my work in web development and design, where creativity meets functionality. Let’s build
       something amazing together!</p>
     <button class="btn1" type="button" onclick="onClickEvent()">My React Portfolio!</button>
   </div>
 
+  <!-----------------Section 2---------------->
 
+  
+  <div style="margin:0px; padding:0px;"class="section2">
+
+    <p class="pstn-abs section2">Introduction</p>
+    <h2 class="h2index pstn-abs">Overview</h2>
+    <article class="article1 pstn-abs">I am a graduate of Computer Science with a solid understanding of front-end and software development principles, and experience as a technical support engineer. With this role I excel in troubleshooting and providing excellent customer support. I can create functional interfaces focusing on usability and user experience, and my software development knowledge allows me to effectively collaborate on projects. Additionally, I have fundamental skills in design, including creating graphics, designing user interfaces, and producing multimedia content, which enables me to provide creative and comprehensive solutions..
+    </article>
+
+    
+
+<!-- particles.js container -->
+<div id="particles-js"></div>
+
+<!-- scripts -->
+<script src="../particles.js"></script>
+<script src="/js/app.js"></script>
+
+<!-- stats.js -->
+<script src="js/lib/stats.js"></script>
+<script>
+  var count_particles, stats, update;
+  stats = new Stats;
+  stats.setMode(0);
+  stats.domElement.style.position = 'absolute';
+  stats.domElement.style.left = '0px';
+  stats.domElement.style.top = '0px';
+  document.body.appendChild(stats.domElement);
+  count_particles = document.querySelector('.js-count-particles');
+  update = function() {
+    stats.begin();
+    stats.end();
+    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    }
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+</script>
+  </div>
 
  
-  <div style="margin:0px; padding:0px;">
-    <img src="./img/JIB4.jpg" alt="img" class="new-section" />
+  <!-- <div style="margin:0px; padding:0px;">
+    <img src="./img/JIB4.jpg" alt="img" class="section2" />
     <p>Introduction</p>
     <h2 class="h2index">Overview</h2>
     <div>
     <article class="article1">I am a graduate of Computer Science with a solid understanding of front-end and software development principles, and experience as a technical support engineer. With this role I excel in troubleshooting and providing excellent customer support. I can create functional interfaces focusing on usability and user experience, and my software development knowledge allows me to effectively collaborate on projects. Additionally, I have fundamental skills in design, including creating graphics, designing user interfaces, and producing multimedia content, which enables me to provide creative and comprehensive solutions..
     </article>
     </div>
-  </div>
- 
+  </div> -->
 
 
-</body>
+ </body>
+
+
 
 </html>
