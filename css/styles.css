@@ -7,6 +7,11 @@
   margin: 0;
   padding: 0;
 }
+
+
+@media (min-width: 1920px) {
+  
+}
 .nav-1 {
   font-size: 20px;
   font-family: "consoloas", serif;
@@ -91,18 +96,18 @@ body {
   margin-top: 0;
   padding-top: 0;
 }
-/* .sideimg {
-  width: 20%;
-  height: 20%;
-  border-radius: 50%;
-  
-  object-fit: cover;
-  z-index: -1;
-} */
+
 @font-face {
   font-family: "AppleGaramond";
   src: url("/apple_garamond/AppleGaramond-Bold.ttf") format("truetype");
+  
 }
+@font-face {
+  font-family: "Thunder";
+  src: url("/Fonts/Web-TT/Thunder-BlackHC.ttf") format("truetype");
+  
+}
+
 @keyframes chromatic {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
@@ -127,11 +132,6 @@ body {
   animation: chromatic 6s infinite linear;
   cursor: default;
 }
-
-
-
-
-
 
 /* testimonials */
 .odd {
@@ -229,8 +229,6 @@ img {
   background-color: blanchedalmond;
 }
 
-
-
 .btn1 {
   background-color: rgb(216, 43, 43);
   color: white;
@@ -248,14 +246,7 @@ img {
   justify-content: center; 
   cursor: url("/img/icons8-cursor-48.png"), auto;
 }
-/* button:hover {
-  color: green;
-  background-color: tomato;
-  transition-duration: 500ms;
-} */
-
-
-/* ---------------------------------New Section------------------------------------------- */
+/* ---------------------------------2nd Section------------------------------------------- */
 .section2 {
   position: relative;
   top: 0;
@@ -268,6 +259,7 @@ img {
     gap: 20px;
     height: 400px;
     border-radius: 20px;
+    z-index: 0;
 }
 .imgsection2-2 {
   top: 400px;
@@ -282,25 +274,57 @@ img {
     gap: 20px;
     height: 400px;
     border-radius: 20px;
+    object-fit: cover;
 }
 
-.sectionh3-1{
-
-  top: 850px;
+.section-2h2 {
+  background-image: url("/img/section2/3ce078f97359456cdd35986bfab69184.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-clip: padding-box;
+  top: 400px;
   left: 120px;
   color: white;
-  gap: 20px;
-  height: 500px;
-  border-radius: 20px;
+  text-align: center;
+  align-content: center;
+  height: 400px;
+  border-radius: 30px;
+  width: 300px;
 }
-/* 
-  img#\ imgsection2 {
-    top: 49px;
-    height: 500px;
-    border-radius: 20px;
-    
 
-} */
+.section-2h3 {
+  background-image: url("/img/section2/draw.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-clip: padding-box;
+  top: 400px;
+  left: 750px;
+  color: white;
+  text-align: center;
+  align-content: center;
+  height: 400px;
+  border-radius: 30px;
+  width: 300px;
+}
+
+.section-2h4 {
+  background-image: url("/img/section2/react.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-clip: padding-box;
+  top: 400px;
+  left: 1420px;
+  color: white;
+  text-align: center;
+  align-content: center;
+  height: 400px;
+  border-radius: 30px;
+  width: 300px;
+}
+
 .h2index {
   width: 100%;
   height: 100%;
@@ -335,70 +359,4 @@ img {
 }
 .pstn-abs {
   position: absolute;
-}
-
-
-/* ---------------------------------Particles------------------------------------------- */
-
-
-
-html{
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-canvas{
-  display:block;
-  vertical-align:bottom;
-}
-
-
-/* ---- stats.js ---- */
-
-.count-particles{
-  background: #000022;
-  position: absolute;
-  top: 48px;
-  left: 0;
-  width: 80px;
-  color: #13E8E9;
-  font-size: .8em;
-  text-align: left;
-  text-indent: 4px;
-  line-height: 14px;
-  padding-bottom: 2px;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: bold;
-}
-
-.js-count-particles{
-  font-size: 1.1em;
-}
-
-#stats,
-.count-particles{
-  -webkit-user-select: none;
-  margin-top: 5px;
-  margin-left: 5px;
-}
-
-#stats{
-  border-radius: 3px 3px 0 0;
-  overflow: hidden;
-}
-
-.count-particles{
-  border-radius: 0 0 3px 3px;
-}
-
-
-/* ---- particles.js container ---- */
-
-#particles-js{
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  background-image: url('');
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
 }
